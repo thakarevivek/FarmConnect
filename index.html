@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Connect</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="assets/media/home-media/logo.jpg" alt="Farm Connect"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">🛒</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">✖</a>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <img src="assets/media/home-media/Main-image.png" alt="Farmers">
+    </section>
+
+    <!-- Principles -->
+    <section class="pplserv">
+        <h2>- Principles -</h2>
+        <div class="icons">
+            <div class="icon"><img src="assets/media/home-media/trackable1.png">
+                <p>Trackable</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/eco-friendly1.png">
+                <p>Eco-friendly</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/fair-trade1.png">
+                <p>Fair Trade</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/Ethical1.png">
+                <p>Ethical</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/community1.png">
+                <p>Community</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Video -->
+    <section class="video-section">
+        <div class="video">
+            <video width="100%" controls>
+                <source src="assets/media/home-media/farm-vdo1.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="video-text">
+            <p>Farm Connect products ensure traceability, fairness and sustainability for every family.</p>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section class="product-container" id="products">
+        <div class="product-image"><img src="assets/media/product-media/wheat.jpg" alt="Shudh Wheat"></div>
+        <div class="product-info">
+            <h1>Shudh Pure Wheat</h1>
+            <p class="price">₹299.00</p>
+            <input type="number" value="1" min="1">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="details-section" >
+        <div class="description">
+            <h2>Description</h2>
+            <ul>
+                <li>100% Natural & Pure</li>
+                <li>Rich in Omega-3</li>
+                <li>High in Fiber</li>
+                <li>Traceable Sourcing</li>
+            </ul>
+        </div>
+        <div class="qr-table"  >
+            <img src="assets/media/product-media/qr-code.png" alt="QR Code">
+            <table>
+                <tr>
+                    <td>Speciality</td>
+                    <td>Natural</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>125g</td>
+                </tr>
+                <tr>
+                    <td>Package</td>
+                    <td>Glass Bottle</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="registration" class="container">
+        <h2>Farmer <span class="text-green">Registration</span></h2>
+        <p>Please fill out this form to register as a Farmer.</p>
+        <label>First Name*</label><br>
+        <input type="text" class="form-control"><br>
+
+        <label>Last Name</label><br>
+        <input type="text" class="form-control"><br>
+
+        <label>Email (Optional)</label><br>
+        <input type="email" class="form-control"><br>
+
+        <label>Mobile*</label><br>
+        <input type="tel" class="form-control"><br>
+        <!-- <img src="/assets/media/home-media/logo.jpg" alt="" width="100px"> -->
+
+        <button class="btn-green">Submit</button>
+        
+
+    </section>
+    
+        <!-- Services -->
+    <section class="pplserv">
+        <h2>- Services -</h2>
+        <div class="icons">
+            <div class="icon"><img src="assets/media/home-media/trackable1.png">
+                <p>Trackable</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/eco-friendly1.png">
+                <p>Eco-friendly</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/fair-trade1.png">
+                <p>Fair Trade</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/Ethical1.png">
+                <p>Ethical</p>
+            </div>
+            <div class="icon"><img src="assets/media/home-media/community1.png">
+                <p>Community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label>Name</label><input type="text" required>
+            <label>Message</label><textarea required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#registration">Register</a>
+            </div>
+            <div>
+                <h3>Policies</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Shipping</a>
+                <a href="#">Refund</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>business@farmconnect.com</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:20px;">© 2025 Farm Connect</p>
+        <p style="text-align:center;">created by dev<span>KP</span></p>
+
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
